@@ -18,12 +18,12 @@ const Banner = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 md:from-black/70 to-transparent"></div>
 
       {/* Text content */}
-      <div className="relative z-10 flex flex-col justify-end md:justify-center items-start h-full px-5 md:px-20 py-20">
+      <div className="relative z-10 flex flex-col justify-end md:justify-center items-start h-full px-5 md:px-20 py-20 font-ubuntu">
         <h1 className="text-4xl font-bold text-white mb-4">
           Welcome to <br className="flex md:hidden" />{" "}
           <span className="text-[#CD4242]">AMRF Transport</span>
         </h1>
-        <p className="text-lg text-white mb-4 max-w-md">
+        <p className="text-sm md:text-lg text-white mb-4 max-w-md">
           Your trusted partner for reliable, efficient, and professional
           transport services.
         </p>
