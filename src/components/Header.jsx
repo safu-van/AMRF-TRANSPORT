@@ -9,7 +9,6 @@ const Header = () => {
 
   return (
     <header className="flex h-auto md:h-20 md:justify-between items-center px-6 md:px-10 font-ubuntu bg-white">
-      {/* Logo Section */}
       <div className="w-1/2 md:w-1/3 flex justify-start md:justify-center py-4 md:py-0 ">
         <img
           className="h-14 md:h-16 cursor-pointer"
@@ -18,7 +17,6 @@ const Header = () => {
         />
       </div>
 
-      {/* Navigation Links */}
       <nav className="hidden md:flex md:justify-center md:w-1/3">
         <ul className="flex space-x-10">
           <li className="hover:text-[#CD4242] cursor-pointer">Home</li>
@@ -28,7 +26,6 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Contact Us Button */}
       <div className="w-1/2 md:w-1/3 flex justify-end md:justify-center py-4 md:py-0">
         <button className="relative bg-[#CD4242] w-24 md:w-32 h-10 rounded-md text-white overflow-hidden group">
           <span className="absolute inset-0 bg-[#CD4242] transform translate-x-0 group-hover:translate-x-full transition-transform duration-500"></span>
@@ -37,11 +34,9 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Icon */}
       <div className="md:hidden ml-3 flex items-center">
         <button className="focus:outline-none" onClick={toggleMenu}>
           {isMenuOpen ? (
-            // Cross Icon
             <svg
               className="w-9 h-10"
               fill="none"
@@ -57,7 +52,6 @@ const Header = () => {
               />
             </svg>
           ) : (
-            // Hamburger Icon
             <svg
               className="w-9 h-10"
               fill="none"
@@ -76,7 +70,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="absolute z-10 top-20 left-0 w-full bg-white shadow-md md:hidden">
           <ul className="flex flex-col px-6 space-y-4 py-4">

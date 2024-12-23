@@ -37,7 +37,7 @@ const About = () => {
             <span className="text-base">About Us</span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl text-center md:text-start font-bold text-[#005BAA]">
+          <h1 className="text-2xl md:text-3xl text-center md:text-start font-semibold text-[#005BAA]">
             Delivering Excellence in Global Freight Solutions
           </h1>
           
