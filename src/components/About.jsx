@@ -32,12 +32,12 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2 py-8 px-4 lg:px-10 space-y-3 font-ubuntu">
-          <div className="flex items-center space-x-1 text-[#CD4242]">
+          <div className="flex items-center justify-center md:justify-normal space-x-1 text-[#CD4242]">
             <BsFillInfoCircleFill className="text-lg" />
             <span className="text-base">About Us</span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl font-bold text-[#005BAA]">
+          <h1 className="text-2xl md:text-3xl text-center md:text-start font-bold text-[#005BAA]">
             Delivering Excellence in Global Freight Solutions
           </h1>
           

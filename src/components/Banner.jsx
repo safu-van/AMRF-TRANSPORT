@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative h-[35rem]">
+    <div className="relative h-[38rem] md:h-[40rem]">
       {/* Video as background */}
       <video
         autoPlay
