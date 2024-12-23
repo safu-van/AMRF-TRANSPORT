@@ -15,7 +15,7 @@ const Banner = () => {
       </video>
 
       {/* Full overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 md:from-black/70 to-transparent"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Text content */}
       <div className="relative z-10 flex flex-col justify-end md:justify-center items-start h-full px-5 md:px-20 py-20 font-ubuntu">

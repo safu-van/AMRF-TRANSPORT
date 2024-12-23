@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         ubuntu: ["Moderustic", "serif"],
       },
+      boxShadow: {
+        'custom': '6px 5px 30px 0px rgba(0, 0, 0, 0.25)',
+      },
       keyframes: {
         slideBgIn: {
           "0%": { transform: "translateX(100%)" },

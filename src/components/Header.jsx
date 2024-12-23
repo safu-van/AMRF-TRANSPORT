@@ -8,11 +8,11 @@ const Header = () => {
   };
 
   return (
-    <header className="flex h-auto md:h-24 md:justify-between items-center px-6 md:px-10 font-ubuntu bg-white shadow-md">
+    <header className="flex h-auto md:h-20 md:justify-between items-center px-6 md:px-10 font-ubuntu bg-white">
       {/* Logo Section */}
       <div className="w-1/2 md:w-1/3 flex justify-start md:justify-center py-4 md:py-0 ">
         <img
-          className="h-14 md:h-20 cursor-pointer"
+          className="h-14 md:h-16 cursor-pointer"
           src="/amrf-logo.svg"
           alt="Logo"
         />
@@ -78,7 +78,7 @@ const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white shadow-md md:hidden">
+        <div className="absolute z-10 top-20 left-0 w-full bg-white shadow-md md:hidden">
           <ul className="flex flex-col px-6 space-y-4 py-4">
             <li className="text-gray-700 hover:text-[#CD4242] cursor-pointer">
               Home
