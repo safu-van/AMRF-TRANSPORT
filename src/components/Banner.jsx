@@ -27,7 +27,7 @@ const Banner = () => {
 
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 flex flex-col justify-end md:justify-center items-start h-full px-5 md:px-20 py-20 font-ubuntu">
+      <div className="relative z-10 flex flex-col justify-end md:justify-end items-start h-full px-5 md:px-28 py-20 font-ubuntu">
         <h1 className="text-4xl font-semibold text-white mb-4">
           Welcome to <br className="flex md:hidden" />
           <span className="text-[#CD4242]">AMRF Transport</span>

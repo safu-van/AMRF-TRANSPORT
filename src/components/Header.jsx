@@ -138,6 +138,7 @@ const Header = () => {
               FAQs
             </li>
           </ul>
+          <div className="absolute h-screen w-full" onClick={toggleMenu}></div>
         </div>
       )}
     </header>
