@@ -21,7 +21,7 @@ const Header = () => {
         <ul className="flex space-x-10">
           <li className="hover:text-[#CD4242] cursor-pointer">Home</li>
           <li className="hover:text-[#CD4242] cursor-pointer">About</li>
-          <li className="hover:text-[#CD4242] cursor-pointer">Service</li>
+          <li className="hover:text-[#CD4242] cursor-pointer">Services</li>
           <li className="hover:text-[#CD4242] cursor-pointer">FAQs</li>
         </ul>
       </nav>
