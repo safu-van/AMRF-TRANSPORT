@@ -61,25 +61,25 @@ const Footer = () => {
 
           <div className="hidden md:flex flex-col space-y-2">
             <h2 className="text-xl font-semibold mb-1">Services</h2>
-            <span className="text-sm text-gray-300">Land Freight</span>
-            <span className="text-sm text-gray-300">Sea Freight</span>
-            <span className="text-sm text-gray-300">Air Freight</span>
-            <span className="text-sm text-gray-300">Customs Clearance</span>
+            <span className="text-sm text-gray-300 cursor-pointer hover:text-white">Land Freight</span>
+            <span className="text-sm text-gray-300 cursor-pointer hover:text-white">Sea Freight</span>
+            <span className="text-sm text-gray-300 cursor-pointer hover:text-white">Air Freight</span>
+            <span className="text-sm text-gray-300 cursor-pointer hover:text-white">Customs Clearance</span>
           </div>
 
           <div className="flex flex-col space-y-3">
             <h2 className="text-xl font-semibold mb-1">Contact</h2>
             <div className="flex gap-2 items-center">
               <img className="h-5" src="/mail.png" alt="..." />
-              <span className="text-sm text-gray-300">amrf@gmail.com</span>
+              <span className="text-sm text-gray-300 cursor-pointer hover:text-white">amrf@gmail.com</span>
             </div>
             <div className="flex gap-2 items-center">
               <img className="h-5" src="/phone.png" alt="..." />
-              <span className="text-sm text-gray-300">+971559345323</span>
+              <span className="text-sm text-gray-300 cursor-pointer hover:text-white">+971559345323</span>
             </div>
             <div className="flex gap-2 items-center">
               <img className="h-5" src="/location.png" alt="..." />
-              <span className="text-sm text-gray-300">
+              <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
                 Office 111, Hilal Bank Building, PO Box 47578, Al Qusais 2,
                 Dubai, UAE
               </span>
