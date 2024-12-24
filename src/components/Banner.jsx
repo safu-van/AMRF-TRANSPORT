@@ -1,6 +1,18 @@
 import React from "react";
 
 const Banner = () => {
+  const scrollIntoServices = () => {
+    const element = document.getElementById("services");
+    const headerOffset = 80;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="relative h-[38rem] md:h-[40rem]">
       <video
@@ -24,7 +36,10 @@ const Banner = () => {
           Your trusted partner for reliable, efficient, and professional
           transport services.
         </p>
-        <button className="relative bg-[#CD4242] px-6 py-2 rounded-md text-white overflow-hidden group">
+        <button
+          className="relative bg-[#CD4242] px-6 py-2 rounded-md text-white overflow-hidden group"
+          onClick={scrollIntoServices}
+        >
           <span className="absolute inset-0 bg-[#005BAA] transform translate-x-0 group-hover:translate-x-full transition-transform duration-500"></span>
           <span className="absolute inset-0 bg-[#CD4242] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
           <span className="relative z-10">Discover Our Services</span>

@@ -1,6 +1,21 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="w-full bg-[#005BAA] text-white font-ubuntu">
       <div className="w-full max-w-screen-xl mx-auto py-10 px-5 md:px-10">
@@ -16,15 +31,35 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col space-y-2 md:ml-10">
+          <div className="hidden md:flex flex-col space-y-2 md:ml-10">
             <h2 className="text-xl font-semibold mb-1">Quick Links</h2>
-            <span className="text-sm text-gray-300">Home</span>
-            <span className="text-sm text-gray-300">About</span>
-            <span className="text-sm text-gray-300">Services</span>
-            <span className="text-sm text-gray-300">FAQs</span>
+            <span
+              className="text-sm text-gray-300 cursor-pointer hover:text-white"
+              onClick={() => scrollToSection("home")}
+            >
+              Home
+            </span>
+            <span
+              className="text-sm text-gray-300 cursor-pointer hover:text-white"
+              onClick={() => scrollToSection("about")}
+            >
+              About
+            </span>
+            <span
+              className="text-sm text-gray-300 cursor-pointer hover:text-white"
+              onClick={() => scrollToSection("services")}
+            >
+              Services
+            </span>
+            <span
+              className="text-sm text-gray-300 cursor-pointer hover:text-white"
+              onClick={() => scrollToSection("faq")}
+            >
+              FAQs
+            </span>
           </div>
 
-          <div className="flex flex-col space-y-2">
+          <div className="hidden md:flex flex-col space-y-2">
             <h2 className="text-xl font-semibold mb-1">Services</h2>
             <span className="text-sm text-gray-300">Land Freight</span>
             <span className="text-sm text-gray-300">Sea Freight</span>
