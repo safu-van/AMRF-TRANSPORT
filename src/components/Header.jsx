@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex h-20 justify-between items-center px-6 md:px-10 font-ubuntu bg-white">
+    <header className="fixed top-0 left-0 right-0 z-50 flex h-20 justify-between shadow-lg items-center px-6 md:px-10 font-ubuntu bg-white">
       <div className="w-1/2 md:w-1/3 flex justify-start md:justify-center">
         <img
           className="h-14 md:h-16 cursor-pointer"

@@ -14,7 +14,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative h-[38rem] md:h-[40rem]">
+    <div className="relative h-[40rem] md:h-[43rem]">
       <video
         autoPlay
         loop
