@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatsAppButton = () => {
   const handleClick = () => {
-    window.open("https://wa.me/+919188552541", "_blank");
+    window.open("https://wa.me/+971529787246", "_blank");
   };
 
   return (
