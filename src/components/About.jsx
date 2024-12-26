@@ -36,13 +36,13 @@ const About = () => {
             <BsFillInfoCircleFill className="text-lg" />
             <span className="text-base">About Us</span>
           </div>
-          
+
           <h1 className="text-2xl md:text-3xl text-center md:text-start font-semibold text-[#005BAA]">
             Delivering Excellence in Global Freight Solutions
           </h1>
-          
+
           <p className="text-md text-gray-500">
-            At <span className="text-[#CD4242]">AMRF Transport LLC</span>, we
+            At <span className="text-[#CD4242]">AMRF TRANSPORT LLC</span>, we
             are committed to providing reliable, efficient, and cost-effective
             freight solutions tailored to your needs. With a strong foundation
             in land freight, air freight, sea freight, and customs clearance, we
@@ -51,7 +51,7 @@ const About = () => {
             ensure that your shipments arrive safely and on time, backed by
             cutting-edge technology and a customer-first approach.
           </p>
-          
+
           <p className="text-md text-gray-500">
             With years of experience in the logistics industry, AMRF Transport
             LLC has become a trusted partner for businesses of all sizes.

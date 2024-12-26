@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Contact = () => {
+  const [phone, setPhone] = useState("");
+
   return (
     <div className="w-full h-auto p-4 mt-5 md:mt-0 md:p-14 mb-10 font-ubuntu">
       <div className="w-full h-full">
@@ -30,7 +34,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="w-full p-2.5 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500"
-                  placeholder="Your Name"
+                  placeholder="Enter your name"
                 />
               </div>
               <div>
@@ -38,17 +42,33 @@ const Contact = () => {
                 <input
                   type="email"
                   className="w-full p-2.5 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500"
-                  placeholder="Your Email"
+                  placeholder="Enter your email"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">
                   Phone Number
                 </label>
-                <input
-                  type="number"
-                  className="w-full p-2.5 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500"
-                  placeholder="Your Phone Number"
+                <PhoneInput
+                  country={"ae"}
+                  placeholder="Enter your phone number"
+                  value={phone}
+                  onChange={(phone) => setPhone(phone)}
+                  inputStyle={{
+                    width: "100%",
+                    height: "44px",
+                    border: "1px solid #D1D5DB",
+                    borderRadius: "0.375rem",
+                    paddingLeft: "48px",
+                  }}
+                  buttonStyle={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                    marginLeft: "5px",
+                  }}
+                  dropdownStyle={{
+                    borderRadius: "0.375rem",
+                  }}
                 />
               </div>
               <div>
@@ -58,7 +78,7 @@ const Contact = () => {
                 <textarea
                   className="w-full p-2.5 md:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500"
                   rows="4"
-                  placeholder="Your Message"
+                  placeholder="Write your message here..."
                 ></textarea>
               </div>
               <button className="relative bg-[#CD4242] w-full h-10 rounded-md text-white overflow-hidden group">
