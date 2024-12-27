@@ -49,9 +49,8 @@ const Contact = () => {
       const data = await response.json();
 
       if (data.success) {
-        // Reset the form on success
         setFormValues({ name: "", email: "", phone: "", message: "" });
-        setIsSubmitted(true)
+        setIsSubmitted(true);
       }
     } catch (error) {
       console.error("Form submission error:", error);
@@ -61,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-auto p-4 mt-5 md:mt-0 md:p-14 mb-10 font-ubuntu">
+    <div className="w-full h-auto p-4 mt-5 md:mt-0 md:p-14 mb-10 font-ubuntu animate-fade-in">
       <div className="w-full h-full">
         <div className="w-full flex flex-col items-center justify-center space-y-2 mb-6 md:mb-14">
           <h1 className="text-2xl md:text-3xl font-semibold">Contact Us</h1>
@@ -71,7 +70,7 @@ const Contact = () => {
         </div>
 
         <div className="w-full h-auto flex flex-col md:flex-row relative lg:px-20 xl:px-28">
-          <div className="hidden md:block w-full md:w-1/2 h-80 md:h-[37rem] mx-10 relative z-10 -top-5 rounded-xl shadow-xl overflow-hidden">
+          <div className="hidden md:block w-full md:w-1/2 h-80 md:h-[37rem] mx-10 relative z-10 -top-5 rounded-xl shadow-xl overflow-hidden transition-transform duration-500 transform hover:scale-105">
             <img
               src="/contact.jpg"
               alt="Contact"
@@ -79,12 +78,16 @@ const Contact = () => {
             />
           </div>
 
-          <div className="w-full md:w-1/2 h-auto bg-gray-50 mx-auto md:mx-10 md:-ml-24 relative z-20 p-6 md:p-8 flex flex-col justify-center space-y-6 rounded-xl shadow-xl">
+          <div className="w-full md:w-1/2 h-auto bg-gray-50 mx-auto md:mx-10 md:-ml-24 relative z-20 p-6 md:p-8 flex flex-col justify-center space-y-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
             {isSubmitted ? (
-              <div className="h-full w-full flex flex-col justify-center items-center space-y-5 p-7 md:10">
-                <img src="/success.png" alt="" className="h-20" />
-                <h1 className="text-3xl font-semibold">Thank You!</h1>
-                <p className="text-center">
+              <div className="h-full w-full flex flex-col justify-center items-center space-y-5 p-7 md:10 animate-fade-in">
+                <img
+                  src="/success.png"
+                  alt="..."
+                  className="h-20 transition-transform duration-500 transform hover:scale-110"
+                />
+                <h1 className="text-2xl md:text-3xl font-semibold">Thank You!</h1>
+                <p className="text-center text-sm md:text-base">
                   Your message has been successfully sent. We'll get back to you
                   as soon as possible.
                 </p>
@@ -172,7 +175,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className={`relative w-full h-10 rounded-md text-white overflow-hidden group ${
+                    className={`relative w-full h-10 rounded-md text-white overflow-hidden group transition-transform duration-500 transform hover:scale-105 ${
                       isLoading ? "cursor-not-allowed" : "cursor-pointer"
                     }`}
                     disabled={isLoading}
