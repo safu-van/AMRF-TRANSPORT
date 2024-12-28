@@ -14,18 +14,21 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative h-[40rem] md:h-[43rem]">
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/banner-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="absolute inset-0 bg-black/50"></div>
+    <div className="relative h-[40rem] md:h-[43rem] will-change-transform">
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ transform: "translateZ(0)" }}
+        >
+          <source src="/banner-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black/45 backdrop-filter backdrop-blur-[0px]"></div>
+      </div>
 
       <div className="relative z-10 flex flex-col justify-end md:justify-end items-start h-full px-5 md:px-28 py-20 font-ubuntu">
         <h1 className="text-4xl font-semibold text-white mb-4">
