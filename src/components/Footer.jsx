@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
 
           <div className="hidden md:flex flex-col space-y-2">
-            <h2 className="text-xl font-semibold mb-1">Services</h2>
+            <h2 className="text-xl font-semibold mb-1">How can we help you?</h2>
             <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
               Land Freight
             </span>
@@ -73,24 +73,31 @@ const Footer = () => {
             <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
               Customs Clearance
             </span>
+            <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
+              Ship Chandling
+            </span>
           </div>
 
           <div className="flex flex-col space-y-3">
-            <h2 className="text-xl font-semibold mb-1">Contact</h2>
-            <div className="flex gap-2 items-center">
-              <img className="h-5" src="/mail.png" alt="..." />
-              <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
+            <h2 className="text-xl font-semibold mb-1">Get In Touch</h2>
+            <div className="flex gap-2 items-start flex-wrap">
+              <img className="h-5 flex-shrink-0" src="/mail.png" alt="..." />
+              <span className="text-sm text-gray-300 cursor-pointer hover:text-white break-all max-w-full">
                 operation@amrftransport.com
               </span>
             </div>
             <div className="flex gap-2 items-center">
-              <img className="h-5" src="/phone.png" alt="..." />
+              <img className="h-5 flex-shrink-0" src="/phone.png" alt="..." />
               <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
                 +971 52 978 7246
               </span>
             </div>
             <div className="flex gap-2 items-center">
-              <img className="h-5" src="/location.png" alt="..." />
+              <img
+                className="h-5 flex-shrink-0"
+                src="/location.png"
+                alt="..."
+              />
               <span className="text-sm text-gray-300 cursor-pointer hover:text-white">
                 Al Nahda, Dubai, UAE
               </span>

@@ -29,4 +29,11 @@ export const services = [
     content:
       "Our customs clearance specialists reduce the risk of route border delays, so your shipments arrive at the time.",
   },
+  {
+    id: 5,
+    icon: "/ship-chandling.png",
+    heading: "Ship Chandling",
+    content:
+      "Providing ships with essential supplies such as food, spare parts, and technical items to ensure smooth operations.",
+  },
 ];
